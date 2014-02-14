@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:msg="http://afps.skyguide.ch/flightplanservices/v1/msg" xmlns:ns="http://www.fixm.aero/msg/1.0" xmlns:ns1="http://www.fixm.aero/base/1.0" xmlns:ns2="http://www.fixm.aero/fx/1.0">
+   <soapenv:Header />
+   <soapenv:Body>
+      <msg:CreateFlightPlanRequest>
+         <ns:metadata>
+            <ns:gumi>urn:fixm.aero:test:soapui:20140214T130904:14943</ns:gumi>
+         </ns:metadata>
+         <msg:flight>
+            <ns2:gufi>ch.xample.20000101T000000.0</ns2:gufi>
+            <ns2:activeFlightPlan ns2:flightPlanState="PROPOSED_PLANNED" ns2:flightPlanIdentifier="0">
+               <ns2:aircraftIdentity>
+                  <ns2:acid>HB0006</ns2:acid>
+               </ns2:aircraftIdentity>
+               <ns2:aircraftType>
+                  <ns2:capabilities>
+                     <ns2:communication>
+                        <ns2:communicationCode>E1</ns2:communicationCode>
+                        <ns2:communicationCode>J2</ns2:communicationCode>
+                        <ns2:communicationCode>J3</ns2:communicationCode>
+                        <ns2:communicationCode>J7</ns2:communicationCode>
+                        <ns2:communicationCode>Y</ns2:communicationCode>
+                     </ns2:communication>
+                     <ns2:surveillance>
+                        <ns2:surveillanceCode>E</ns2:surveillanceCode>
+                        <ns2:surveillanceCode>X</ns2:surveillanceCode>
+                        <ns2:surveillanceCode>U2</ns2:surveillanceCode>
+                        <ns2:surveillanceCode>V1</ns2:surveillanceCode>
+                        <ns2:surveillanceCode>V2</ns2:surveillanceCode>
+                     </ns2:surveillance>
+                     <ns2:survival>
+                        <ns2:dinghies>
+                           <ns2:totalCapacity>2</ns2:totalCapacity>
+                           <ns2:count>2</ns2:count>
+                           <ns2:covered>NOT_COVERED</ns2:covered>
+                           <ns2:colour>OTHER</ns2:colour>
+                        </ns2:dinghies>
+                        <ns2:lifejackets>
+                           <ns2:count>1</ns2:count>
+                           <ns2:lifejacketCode>U</ns2:lifejacketCode>
+                           <ns2:lifejacketCode>F</ns2:lifejacketCode>
+                        </ns2:lifejackets>
+                        <ns2:emergencyRadios>
+                           <ns2:emergencyRadioCode>V</ns2:emergencyRadioCode>
+                           <ns2:emergencyRadioCode>U</ns2:emergencyRadioCode>
+                        </ns2:emergencyRadios>
+                        <ns2:survivalEquipment>
+                           <ns2:survivalEquipmentCode>JUNGLE</ns2:survivalEquipmentCode>
+                        </ns2:survivalEquipment>
+                        <ns2:survivalEquipment>
+                           <ns2:survivalEquipmentCode>MARITIME</ns2:survivalEquipmentCode>
+                        </ns2:survivalEquipment>
+                     </ns2:survival>
+                     <ns2:navigation>
+                        <ns2:navigationCode>G</ns2:navigationCode>
+                        <ns2:navigationCode>O</ns2:navigationCode>
+                        <ns2:navigationCode>T</ns2:navigationCode>
+                        <ns2:approachCode>B</ns2:approachCode>
+                     </ns2:navigation>
+                  </ns2:capabilities>
+                  <ns2:aircraftType>
+                     <ns2:model>ZZZZ</ns2:model>
+                  </ns2:aircraftType>
+                  <ns2:performance>
+                     <ns2:wakeTurbulence>HEAVY</ns2:wakeTurbulence>
+                  </ns2:performance>
+                  <ns2:colorAndMarkings>GREEN</ns2:colorAndMarkings>
+               </ns2:aircraftType>
+               <ns2:formationAircraftCount>6</ns2:formationAircraftCount>
+               <ns2:origin>
+                  <ns2:aerodrome>QSDF</ns2:aerodrome>
+               </ns2:origin>
+               <ns2:destination>
+                  <ns2:aerodrome>VBNC</ns2:aerodrome>
+                  <ns2:alternateAerodrome>DFGG</ns2:alternateAerodrome>
+                  <ns2:alternateAerodrome>LKJI</ns2:alternateAerodrome>
+               </ns2:destination>
+               <ns2:enRoute>
+                  <ns2:filedDelay>
+                     <ns2:point>
+                        <ns2:fix ns1:name="X" ns1:type="FIX" />
+                     </ns2:point>
+                     <ns2:plannedDelay>P0Y0M0DT0H0M</ns2:plannedDelay>
+                  </ns2:filedDelay>
+                  <ns2:enRouteTime>P0Y0M0DT1H0M</ns2:enRouteTime>
+               </ns2:enRoute>
+               <ns2:departureTime ns1:estimated="2014-12-30T20:00:00">2014-12-30T20:00:00</ns2:departureTime>
+               <ns2:arrivalTime ns1:estimated="2000-01-01T00:00:00">2000-01-01T00:00:00</ns2:arrivalTime>
+               <ns2:request>
+                  <ns2:airspeed ns1:uom="KPH">1000.0</ns2:airspeed>
+                  <ns2:flightRules>IFR_VFR</ns2:flightRules>
+               </ns2:request>
+               <ns2:route>
+                  <ns2:text>SDF FGG</ns2:text>
+                  <ns2:segment>
+                     <ns2:airway>X</ns2:airway>
+                     <ns2:point>
+                        <ns2:fix ns1:name="X" ns1:type="FIX" />
+                     </ns2:point>
+                     <ns2:cruise>
+                        <ns2:altitude ns1:uom="FT" ns1:ref="FL">0</ns2:altitude>
+                        <ns2:airspeed ns1:uom="KIAS">0</ns2:airspeed>
+                     </ns2:cruise>
+                  </ns2:segment>
+               </ns2:route>
+               <ns2:flightType>NON_SCHEDULED</ns2:flightType>
+               <ns2:supplementalData>
+                  <ns2:fuelEndurance>P0Y0M0DT2H0M</ns2:fuelEndurance>
+                  <ns2:pilotInCommand ns1:name="TEST" />
+                  <ns2:personsOnBoard>5</ns2:personsOnBoard>
+               </ns2:supplementalData>
+            </ns2:activeFlightPlan>
+         </msg:flight>
+      </msg:CreateFlightPlanRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+
+----------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------
+
+
+<?xml version="1.0" ?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+	<soap:Header>
+		<wsse:Security soap:actor="secure_span" soap:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+			<wsu:Timestamp wsu:Id="id-1-f5363baec3ca9869d990be5d7f584a26">
+				<wsu:Created>2014-02-14T13:15:49.025806803Z</wsu:Created>
+				<wsu:Expires>2014-02-14T13:20:49.025Z</wsu:Expires>
+			</wsu:Timestamp>
+			<ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+				<ds:SignedInfo>
+					<ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+					<ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+					<ds:Reference URI="#id-0-979a79d537f2934631c3c032343ea4a8">
+						<ds:Transforms>
+							<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+						</ds:Transforms>
+						<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+						<ds:DigestValue>IIEFT1ma/uhszG98EyzWH1XuaFk=</ds:DigestValue>
+					</ds:Reference>
+					<ds:Reference URI="#id-1-f5363baec3ca9869d990be5d7f584a26">
+						<ds:Transforms>
+							<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+						</ds:Transforms>
+						<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+						<ds:DigestValue>SdxKE6GCFoMN38v2hnas4s2LAjo=</ds:DigestValue>
+					</ds:Reference>
+				</ds:SignedInfo>
+				<ds:SignatureValue>dxvbOu2ZRmtHP8mH/QnUQhx4jc0ufYdwSp6y92+vm/BQKk55SQu1+VvWvrcaxrb7F23+BdQ/MwoHxeEpKTbXm79vbFm3ED22fyg3HeyLjsTjso+d7NADl7EW86e6Qm2cbG9EptexEA2OxfhuAHTkl+EeBcYaqOerltZ41Iz6ScqAsVk25NT6cMfPNGUzMAI4Iu5zT4zlH9Y5LgjmkM/gqauuBDK/fLxfiWkz9EQwhusu8hUGdNbCGRPjSG7DBRBFkdqaiT6Yt2CWw6hhAYMzn7TBuJbLXmHEvOA4RVaAW01jvmzUF59fXCjvEmB+bby6G75nC6YqCsudLb7BSXoIaw==</ds:SignatureValue>
+				<ds:KeyInfo>
+					<wsse:SecurityTokenReference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+						<ds:X509Data xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+							<ds:X509IssuerSerial>
+								<ds:X509IssuerName>CN=skyguide-CA-Sub1, DC=skyguide, DC=corp</ds:X509IssuerName>
+								<ds:X509SerialNumber>459422409900219359559697</ds:X509SerialNumber>
+							</ds:X509IssuerSerial>
+						</ds:X509Data>
+					</wsse:SecurityTokenReference>
+				</ds:KeyInfo>
+			</ds:Signature>
+		</wsse:Security>
+	</soap:Header>
+	<soap:Body wsu:Id="id-0-979a79d537f2934631c3c032343ea4a8" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+		<soap:Fault>
+			<faultcode>soap:Server</faultcode>
+			<faultstring>Marshalling Error: cvc-complex-type.2.4.b: The content of element 'ns3:GetFlightPlanStatusResponse' is not complete. One of '{&quot;http://afps.skyguide.ch/flightplanservices/v1/msg&quot;:flightPlanAndStatus}' is expected.</faultstring>
+		</soap:Fault>
+	</soap:Body>
+</soap:Envelope>
