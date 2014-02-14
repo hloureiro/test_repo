@@ -1,6 +1,1 @@
-first line
-Yeah..
-In the midle
-another line
-new text doc.
-end line
+just one
